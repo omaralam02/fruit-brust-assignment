@@ -24,7 +24,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        "primary-color": "#F85559"
+                        'primary-color': '#F85559',
                     }
                 }
             }
@@ -91,33 +91,66 @@
         </nav>
 
         <!-- Carousel Slider -->
-        <div>
-            <div class="carousel w-full mt-16 mb-20">
+        <div class="my-6 lg:mt-16 lg:mb-20">
+            <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/images/banner1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
+                        <div class="text-center text-white h-full">
+                            <h2 class="mb-3 lg:text-7xl font-extrabold">
+                                Exotic tastes at your <br>
+                                doorstep</h2>
+                            <p class="mb-3 lg:text-xl font-normal">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] px-2 py-2 rounded-lg lg:px-8 lg:py-5 lg:text-lg">Shop
+                                Now</button>
+                        </div>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="/images/banner2.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
+                        <div class="text-center text-white h-full">
+                            <h2 class="mb-3 lg:text-7xl font-extrabold">
+                                Exotic tastes at your <br>
+                                doorstep</h2>
+                            <p class="mb-3 lg:text-xl font-normal">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] px-2 py-2 rounded-lg lg:px-8 lg:py-5 lg:text-lg">Shop
+                                Now</button>
+                        </div>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
                     <img src="/images/banner3.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
+                        <div class="text-center text-white h-full">
+                            <h2 class="mb-3 lg:text-7xl font-extrabold">
+                                Exotic tastes at your <br>
+                                doorstep</h2>
+                            <p class="mb-3 lg:text-xl font-normal">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] px-2 py-2 rounded-lg lg:px-8 lg:py-5 lg:text-lg">Shop
+                                Now</button>
+                        </div>
                         <a href="#slide4" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
                     <img src="/images/banner4.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
+                        <div class="text-center text-white h-full">
+                            <h2 class="mb-3 lg:text-7xl font-extrabold">
+                                Exotic tastes at your <br>
+                                doorstep</h2>
+                            <p class="mb-3 lg:text-xl font-normal">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] px-2 py-2 rounded-lg lg:px-8 lg:py-5 lg:text-lg">Shop
+                                Now</button>
+                        </div>
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -125,8 +158,38 @@
         </div>
     </header>
 
-    <main>
-
+    <main class="container md:mx-auto">
+        <div>
+            
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:31;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+        </div>
     </main>
 
     <footer>
