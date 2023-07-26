@@ -24,7 +24,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'primary-color': '#F85559',
+                        "primary-color": "#F85559",
                     }
                 }
             }
@@ -96,7 +96,7 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/images/banner1.png" class="w-full" />
                     <div
-                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full">
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full rounded-xl">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <div class="text-center text-white flex flex-col items-center">
                             <h2 class="mb-3 text-2xl lg:text-7xl font-extrabold">
@@ -111,7 +111,8 @@
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="/images/banner2.png" class="w-full" />
-                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full">
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full rounded-xl">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <div class="text-center text-white flex flex-col items-center">
                             <h2 class="mb-3 text-2xl lg:text-7xl font-extrabold">
@@ -126,7 +127,8 @@
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
                     <img src="/images/banner3.png" class="w-full" />
-                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full">
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full rounded-xl">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <div class="text-center text-white flex flex-col items-center">
                             <h2 class="mb-3 text-2xl lg:text-7xl font-extrabold">
@@ -141,7 +143,8 @@
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
                     <img src="/images/banner4.png" class="w-full" />
-                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full">
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-0 right-5 top-1/2 backdrop-brightness-50 h-full w-full rounded-xl">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <div class="text-center text-white flex flex-col items-center">
                             <h2 class="mb-3 text-2xl lg:text-7xl font-extrabold">
@@ -160,42 +163,332 @@
 
     <main class="container md:mx-auto font-lato">
         <!-- Deal of the Day -->
-        <div class="flex flex-col items-center text-center my-28 mx-8 lg:flex-row lg:justify-between lg:text-start lg:mx-0">
+        <div
+            class="flex flex-col items-center text-center my-28 mx-8 lg:flex-row lg:justify-between lg:text-start lg:mx-0">
             <div>
                 <h2 class="text-5xl font-extrabold mb-3">Deal of the day</h2>
-                <p class="text-lg font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                <p class="text-lg font-normal">Contrary to popular belief, is not simply random text. It has roots in a
+                    piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div>
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl font-extrabold">
-                        <span style="--value:15;">:</span>
-                      </span>
-                      days
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl font-extrabold">
-                        <span style="--value:10;"></span>
-                      </span>
-                      hours
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl font-extrabold">
-                        <span style="--value:24;"></span>
-                      </span>
-                      min
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl font-extrabold">
-                        <span style="--value:31;"></span>
-                      </span>
-                      sec
+                        <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:15;">:</span>
+                        </span>
+                        days
                     </div>
-                  </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:31;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Fruit Price Card -->
+        <div class="grid grid-cols-1 gap-6 mt-24 mb-10 md:grid-cols-2 lg:grid-cols-4">
+            <!-- first card -->
+            <div class="card border-2 border-gray-300">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center  space-y-3">
+                    <h2 class="card-title">S12.90$ - 18.85$</h2>
+                    <hr class="border-2 w-full">
+                    <p>Apples</p>
+                    <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white text-primary-color border-none"
+                            onclick="my_modal_5.showModal()">Details</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and
+                                            fresh
+                                            fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-primary-color" checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-action justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        class="btn border-primary-color border-2 bg-white text-primary-color">Close</button>
+                                    <button class="btn bg-primary-color text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second card -->
+            <div class="card border-2 border-gray-300">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center  space-y-3">
+                    <h2 class="card-title">S12.90$ - 18.85$</h2>
+                    <hr class="border-2 w-full">
+                    <p>Apples</p>
+                    <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-11" class="rating-hidden" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11" class="bg-primary-color mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-11"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white text-primary-color border-none"
+                            onclick="my_modal_6.showModal()">Details</button>
+                        <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and
+                                            fresh
+                                            fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color"  checked/>
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-action justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        class="btn border-primary-color border-2 bg-white text-primary-color">Close</button>
+                                    <button class="btn bg-primary-color text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third card -->
+            <div class="card border-2 border-gray-300">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center  space-y-3">
+                    <h2 class="card-title">S12.90$ - 18.85$</h2>
+                    <hr class="border-2 w-full">
+                    <p>Apples</p>
+                    <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-12" class="rating-hidden" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12" class="bg-primary-color mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-12"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white text-primary-color border-none"
+                            onclick="my_modal_7.showModal()">Details</button>
+                        <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and
+                                            fresh
+                                            fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color"  checked/>
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-action justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        class="btn border-primary-color border-2 bg-white text-primary-color">Close</button>
+                                    <button class="btn bg-primary-color text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fourth card -->
+            <div class="card border-2 border-gray-300">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center  space-y-3">
+                    <h2 class="card-title">S12.90$ - 18.85$</h2>
+                    <hr class="border-2 w-full">
+                    <p>Apples</p>
+                    <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-13" class="rating-hidden" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13" class="bg-primary-color mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-13"
+                            class="bg-primary-color mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white text-primary-color border-none"
+                            onclick="my_modal_8.showModal()">Details</button>
+                        <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and
+                                            fresh
+                                            fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color"  checked/>
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-3"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-action justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        class="btn border-primary-color border-2 bg-white text-primary-color">Close</button>
+                                    <button class="btn bg-primary-color text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-24 flex justify-center">
+            <button class=" text-white text-xl font-bold bg-primary-color hover:bg-primary-color px-8 py-5 rounded-lg">Shop All</button>
+        </div>
+        
     </main>
 
     <footer>
